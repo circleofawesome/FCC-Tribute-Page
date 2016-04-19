@@ -1,57 +1,92 @@
 <style>
-	body{
+
+  html,body{
+  	height: 100%;
+  }
+
+  body{
+  		margin:0px;
+  		border:0px;
+  		padding:0px;
+  	}
+  
+  	
+
+	.top-third{
+		width: 100%;
+		height: 10%;
+		background-color: red;
 		margin:0px;
-		border:0px;
-		padding:0px;
+  		border:0px;
+  		padding:0px;
 	}
 
-	.both-sides{
-		margin: 0px;
-		border: 0px;
-		padding: 0px;
+	.middle-third{
+		width: 100%;
+		height: 35%;
+		background-color: black;
+		margin:0px;
+  		border:0px;
+  		padding:0px;
+  		position: relative;
 	}
 
-	.left-side{
+	.bottom-third{
+		width: 100%;
+		height: 55%;
+		background-color: green;
+		margin:0px;
+  		border:0px;
+  		padding:0px;
+	}
+
+	.left{
 		background-color: #FCE74E;
 		width: 50%;
-		height:100%;
+		height: 100%;
 		float: left;
 	}
 
-	.right-side{
+	.right{
 		background-color: #200025;
 		width: 50%;
 		height: 100%;
 		float: right;
 	}
 
-	.kobe{
-		
-		font-size: 85px;
-		float: right;
-		margin-right: 20px;
-	}
+	.pic{
+		width: 100%;
+    	height: 100%;
+    	position: relative;
+    }
 
-	.bryant{
-		font-size: 85px;
-		margin-left: 20px;
+    .pic img {
+      margin: auto;
+      position: absolute;
+	  max-width: 100%;
+	  max-height: 100%;
+	  left: 435px;
 	}
-
 </style>
 
 <head>
-	<title>
-		Kobe Bryant-24
-	</title>
+  <title>
+    Kobe Bryant-24
+  </title>
 </head>
 
 <body>
-	<div class="both-sides"></div>
-		<div class="left-side">
-			<div class="kobe"><font color="#200025">K O B E</font></div>
-		</div>
-		<div class="right-side">
-			<div class="bryant"><font color="#FCE74E">B R Y A N T</font></div>
-		</div>
-	</div>
+  <div class="top-third">
+    <div class="left"></div>
+    <div class="right"></div>
+  </div>
+  <div class="middle-third">
+  	<div class="left"></div>
+  	<div class="right"></div>
+  	<div class="pic"><img src="http://i.imgur.com/tlenlIh.png"></div>
+  </div>
+  <div class="bottom-third">
+    <div class="left"></div>
+    <div class="right"></div>
+  </div>
 </body>
